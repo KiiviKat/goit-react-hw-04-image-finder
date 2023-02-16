@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import toast, { Toaster } from 'react-hot-toast';
+import { Search } from './Searchbar.styled';
 
 export const Searchbar = ({ onSubmit }) => {
   const handleFormSubmit = evt => {
@@ -19,7 +20,7 @@ export const Searchbar = ({ onSubmit }) => {
     <header className="Searchbar">
       <form className="SearchForm" onSubmit={handleFormSubmit}>
         <button type="submit" className="SearchForm-button">
-          <span className="SearchForm-button-label">Search</span>
+          <Search />
         </button>
         <Toaster />
         <input
